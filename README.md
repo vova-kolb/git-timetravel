@@ -55,20 +55,16 @@ Use these commands as your toolbox:
 ---
 
 **🧩 Quizzes & Checkpoints**
+Before answering any quiz:
 
-Throughout the timeline, you’ll encounter **quiz files** (e.g., `quiz1.txt`).
-
-- To answer: follow the instructions in the file (e.g., create `answers/q1.txt` or edit the file).
-- If correct → you advance.
-- If wrong → you fall into a **“bad bad future”** branch (death).
-
-**🔄 Checkpoints**
-- **After each major commit**, make a **checkpoint commit** yourself.
-
-Example:
-```bash
 git add .
-git commit -m "Checkpoint after Day 42"
+git commit -m "Checkpoint after Step N"
+git tag -f cpN (cp1, cp2...)
+
+If you fail the quiz (die):
+git reset --hard cpN (cp1, cp2...)
+git switch main
+
 ___________________________________________________________________________
 
 **🚀 Where to Begin**
