@@ -1,0 +1,27 @@
+
+
+## Step 1: Discovery (Day 1)
+Expected answer: `diary`
+
+## Step 2: Lab Notes (Day 1 → Day 42)
+Expected answer: `experiment.md`
+
+### Step 3: The Machine
+Expected answer: `7E2-ALPHA-314`  
+
+### Step 4: The Accident
+Expected answer: `2`  
+
+### Step 5: Exploring Futures
+Expected answer: `WE-REMEMBER-THE-LIGHT`  
+
+### Step 6: The Vanished Hint 
+Expected answer: `git reflog`  
+
+### Step 7: Merge Futures
+Expected answer: `dawn`  
+
+### Step 8: Stabilize Timeline
+Expected answer: `WE-REMEMBER-THE-LIGHT at DAWN`  
+
+

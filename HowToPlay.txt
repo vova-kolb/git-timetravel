@@ -4,14 +4,12 @@
 Goal: Find and read the first diary entry.
 Commands to try: `ls`, `cd diary`, `cat day1.txt`, `cd ..`
 Quiz: Where did you find the scientist’s first clue?
-Expected answer: `diary`
 Run: `./quizzes/quiz_step1.sh`
 
 ## Step 2: Lab Notes (Day 1 → Day 42)
 Goal: Explore the lab notes.
 Commands to try: `ls lab`, `cat lab/experiment.md`
 Task: Locate the notes file and confirm it exists.
-Expected answer: `experiment.md`
 Run: `./quizzes/quiz_step2.sh`
 
 Proceed to Act II once both quizzes pass.
@@ -22,7 +20,6 @@ Goal: Search logs for a hidden key.
 Diary clue: “Day 42 — We built the machine. The logs mention something important… but only if you search them.”  
 Commands: `ls lab`, `less lab/machine.log`, `head`, `tail`, `grep KEY lab/machine.log`  
 Quiz: What is the KEY from the machine logs?  
-Expected answer: `7E2-ALPHA-314`  
 Run: `./quizzes/quiz_step3.sh`
 
 
@@ -33,7 +30,6 @@ Goal: Notice the timeline split.
 Diary clue: “Day 99 — Something went wrong. I saw two futures. If you must choose: dawn reveals, dusk conceals.”  
 Commands: `git log --oneline --graph`, `git branch`, `git switch good_future`, `git switch bad_future`  
 Task: Identify how many branches exist after the accident.  
-Expected answer: `2`  
 Run: `./quizzes/quiz_step4.sh`
 
 ### Step 5: Exploring Futures
@@ -42,15 +38,13 @@ Goal: Collect passphrase fragments.
 - Bad future → `diary/day128.txt` → “LIGHT” + final word: dusk  
 Commands: `ls diary`, `cat diary/day128.txt`, `git switch branchname`  
 Quiz: Combine the two halves of the passphrase (ignore the final word).  
-Expected answer: `WE-REMEMBER-THE-LIGHT`  
 Run: `./quizzes/quiz_step5.sh`
 
 ### Step 6: The Vanished Hint
 Goal: Recover a deleted commit.  
 Diary clue: “Nothing is ever truly gone. Time remembers.”  
 Commands: `git reflog`, `git checkout <hash>`, `git cherry-pick <hash>`  
-Quiz: Which Git command remembers erased history?  
-Expected answer: `git reflog`  
+Quiz: Which Git command remembers erased history?    
 Run: `./quizzes/quiz_step6.sh`
 
 ### Step 7: Merge Futures
@@ -58,7 +52,7 @@ Goal: Merge both futures and resolve the conflict.
 Diary clue: “Day 128 — Two versions of the future exist. To stabilize the timeline, you must merge them into one. Remember: dawn reveals, dusk conceals.”  
 Commands: `git merge good_future`, `git merge bad_future`, `cat diary/day128.txt`, edit conflict manually, `git add .`, `git commit`  
 Quiz: Which final word must remain after resolving the conflict?  
-Expected answer: `dawn`  
+ 
 Run: `./quizzes/quiz_step7.sh`
 
 ### Step 8: Stabilize Timeline
@@ -70,7 +64,7 @@ Commands:
 `cat truth.txt`  
 `./validate.sh`  
 Quiz: What is the full final passphrase?  
-Expected answer: `WE-REMEMBER-THE-LIGHT at DAWN`  
+
 Run: `./quizzes/quiz_step8.sh`
 
 
