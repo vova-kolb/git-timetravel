@@ -1,0 +1,3 @@
+# Experiment Notes
+Day 42 — We observed anomalies repeating.
+The logs may contain more than they show…
